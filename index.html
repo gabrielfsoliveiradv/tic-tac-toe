@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Jogo da velha</h1>
+        </header>
+        <hr />
+        <main>
+            <form id="form">
+                <label for="inputPlayerX">X</label>
+                <input type="text" name="inputPlayerX" id="inputPlayerX" placeholder="Jogador X"/>
+                <label for="inputPlayerO">O</label>
+                <input type="text" name="inputPlayerO" id="inputPlayerO" placeholder="Jogador O"/>
+                <button>Começar</button>
+            </form>
+            <section id="game">
+                <h2>Vez de: <span id="playerMoment"></span></h2>
+                <div id="table">
+                    <div class="region" data-region="0"></div>
+                    <div class="region" data-region="1"></div>
+                    <div class="region" data-region="2"></div>
+                    <div class="region" data-region="3"></div>
+                    <div class="region" data-region="4"></div>
+                    <div class="region" data-region="5"></div>
+                    <div class="region" data-region="6"></div>
+                    <div class="region" data-region="7"></div>
+                    <div class="region" data-region="8"></div>
+                </div>
+            </section>
+        </main>
+        <div id="winner"></div>
+    </body>
+
+    <script src="./index.js"></script>
+</html>

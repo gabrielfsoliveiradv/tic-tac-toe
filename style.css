@@ -1,0 +1,32 @@
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game > h2 > span {
+    color: green;
+}
+
+#game > #table {
+    background-color: black;
+    min-width: 400px;
+    max-width: fit-content;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 10px;
+}
+
+#game > #table > div {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 100px;
+}
